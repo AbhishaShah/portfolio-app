@@ -14,11 +14,10 @@ import NotFoundPage from './components/NotFoundPage'
 
 function App() {
   return (
-    <Router basename="/portfolioo-react">
+    <Router>
       <Header />
       <Switch>
       <Route path="/" component={Home} exact/>
-      <Route path="/portfolioo-react" component={Home} exact/>
       <Route path="/work" component={Work} exact/>
       <Route path="/work/:id" component={ProjectDetail} exact/>
       <Route path="/blog" component={Blog} exact/>
